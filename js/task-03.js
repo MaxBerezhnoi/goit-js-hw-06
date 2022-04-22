@@ -15,13 +15,13 @@ const images = [
 for (const image of images) {
   const link = document.createElement("li");
   const picture = document.createElement("img");
-  
+  picture.width = 540;
   picture.src = image.url;
   picture.alt = image.alt;
   link.appendChild(picture);
+  link.classList.add("li");
   const list = document.querySelector("ul");
   list.appendChild(link);
-  
-  
 }
+
 
