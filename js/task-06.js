@@ -10,7 +10,11 @@ textInput.addEventListener("blur", () => {
     if (inputLength === lengthNum) {
         textInput.classList.add("valid");
     }
-    if (inputLength !== lengthNum) {
+    else {
         textInput.classList.add("invalid");
     }
+});
+
+textInput.addEventListener("focus", () => {
+    textInput.removeAttribute('class');
 });
